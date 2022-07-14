@@ -1,0 +1,79 @@
+.team {
+  @include sectionPadding();
+  background-color: var(--btn-color);
+}
+
+.team__title {
+  margin-bottom: 50px;
+
+  @include font(null, 36px, 1.17, null);
+
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+}
+
+.member {
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--base-color);
+  width: 270px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.member__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.member__name {
+  margin-bottom: 10px;
+
+  @include font(500, 16px, 1.19, null);
+  text-align: center;
+}
+
+.member__position {
+  margin-bottom: 16px;
+
+  color: var(--text-color);
+
+  @include font(null, 16px, 1.19, null);
+  text-align: center;
+}
+
+.social {
+  @include flexCentered($ai: null);
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social__icon {
+  @include flexCentered();
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--social-color);
+  background-color: var(--base-color);
+
+  @include transition(color background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--base-color);
+  }
+}
+
+.social__logo {
+  fill: currentColor;
+}

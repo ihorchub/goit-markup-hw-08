@@ -1,0 +1,122 @@
+%baseForm {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  @include transition(border-color);
+}
+
+%formOutline {
+  outline: 3px solid var(--accent-color);
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.form__label {
+  margin-bottom: 4px;
+  @include font(400, 12px, 1.17, 0.01em);
+  color: var(--text-color);
+}
+
+.form__input {
+  padding: 12px 12px 12px 42px;
+  @extend %baseForm;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:focus-visible {
+    outline: 1px solid var(--accent-color);
+  }
+}
+
+.form__textarea {
+  padding: 12px 16px;
+  resize: none;
+  @extend %baseForm;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:focus-visible {
+    outline: 1px solid var(--accent-color);
+  }
+  &::placeholder {
+    @include font(400, 12px, 1.17, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--heading-color);
+  @include transition(fill);
+  .form__input:focus + &,
+  .form__input:hover + & {
+    fill: var(--accent-color);
+  }
+}
+
+.check {
+  @include flexCentered();
+  @include font(400, 14px, 1.71, null);
+  color: var(--text-color);
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.check__input {
+  appearance: none;
+  position: absolute;
+  transform: translateX(-202px);
+}
+
+.check__icons {
+  position: relative;
+  margin-right: 7px;
+  line-height: 0;
+  .check__input:focus-visible + & {
+    @extend %formOutline;
+  }
+}
+
+.check__enabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  @include transition(opacity);
+}
+
+.check__input:checked + .check__icons > .check__enabled {
+  opacity: 1;
+}
+
+.check__disabled {
+  opacity: 1;
+  @include transition(opacity);
+}
+
+.check__input:checked + .check__icons > .check__disabled {
+  opacity: 0;
+}
+
+.main-button--outline:focus-visible {
+  outline: 3px solid var(--accent-color);
+}
+
+.check__conditions {
+  color: var(--accent-color);
+  &:focus-visible {
+    @extend %formOutline;
+  }
+}

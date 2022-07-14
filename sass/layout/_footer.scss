@@ -1,0 +1,95 @@
+.container--footer {
+  @include flexCentered($jc: null, $ai: baseline);
+}
+
+.logo__footer {
+  color: var(--base-color);
+}
+
+.address {
+  margin-top: 20px;
+
+  font-style: normal;
+  @include font(null, 14px, 1.5, null);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__map {
+  color: var(--base-color);
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__tel,
+.address__mail {
+  color: rgba(255, 255, 255, 0.6);
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-socials {
+  margin-left: 83px;
+}
+.footer-socials__text,
+.footer-form__text {
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: var(--base-color);
+}
+
+.social__icon--footer {
+  color: var(--base-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--base-color);
+  }
+}
+
+.footer-form {
+  margin-left: auto;
+}
+
+.subscribe {
+  @include flexCentered($jc: null);
+}
+
+.subscribe__email {
+  padding: 14px 0 14px 16px;
+  margin-right: 12px;
+  width: 358px;
+
+  @include font(400, 16px, 1.25, null);
+
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.main-button--right-icon {
+  @include flexCentered();
+}
+
+.main-button__icon {
+  margin-left: 10px;
+}
