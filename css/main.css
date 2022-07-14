@@ -90,9 +90,11 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 2px solid tomato; */
 }
 
@@ -441,19 +443,12 @@ a {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features__list {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__item {
-  width: 270px;
-}
-.features__item:not(:last-child) {
-  margin-right: 30px;
+  max-width: 100%;
 }
 
 .features__icon {

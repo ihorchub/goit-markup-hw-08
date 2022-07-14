@@ -8,6 +8,11 @@
   padding-bottom: $pb;
 }
 
+@mixin mobilePadding($pt: 60px, $pb: 60px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
   font-size: $fs;

@@ -1,16 +1,18 @@
 .features {
-  @include sectionPadding();
+  // @include sectionPadding();
+  @include mobilePadding();
 }
 
 .features__list {
-  display: flex;
+  // display: flex;
 }
 
 .features__item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  max-width: 100%;
+  // width: 270px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .features__icon {
