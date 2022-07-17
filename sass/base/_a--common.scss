@@ -1,13 +1,13 @@
 body {
-  background-color: var(--base-color);
-  color: var(--heading-color);
+  background-color: $color-base;
+  color: $color-title;
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-line;
 
   font-weight: 500;
   font-size: 14px;
@@ -17,7 +17,7 @@ header {
 
 footer {
   @include sectionPadding(60px, 60px);
-  background-color: #2f303a;
+  background-color: $color-futer;
 }
 
 h2 {
@@ -28,4 +28,5 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }

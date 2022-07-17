@@ -116,6 +116,8 @@
 
 .check__conditions {
   color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
   &:focus-visible {
     @extend %formOutline;
   }

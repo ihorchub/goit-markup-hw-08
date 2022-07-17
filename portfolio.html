@@ -28,42 +28,94 @@
           <a href="./index.html" class="logo">Web<span class="logo__header">Studio</span></a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                >Портфолио</a
+                >Портфоліо</a
               >
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
         <address class="contacts">
           <a href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon" width="16px" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
+            <svg class="contacts__envelope--desck" width="16px" height="12px">
+              <use href="./images/icons.svg#envelope-desck"></use>
+            </svg>
+            <svg class="contacts__envelope--tabl" width="14px" height="10px">
+              <use href="./images/icons.svg#envelope-tabl"></use>
             </svg>
             info@devstudio.com</a
           >
-          <a href="tel:+380961111111" class="contacts__link"
-            ><svg class="contacts__icon" width="10px" height="16">
-              <use href="./images/icons.svg#icon-phone"></use></svg
-            >+38 096 111 11 11</a
+          <a href="tel:+380961111111" class="contacts__link">
+            <svg class="contacts__smartphone--desck" width="10px" height="16px">
+              <use href="./images/icons.svg#smartphone-desck"></use>
+            </svg>
+            <svg class="contacts__smartphone--tabl" width="10px" height="14px">
+              <use href="./images/icons.svg#smartphone-tabl"></use>
+            </svg>
+            +38 096 111 11 11</a
           >
         </address>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg class="menu-btn__open" width="40px" height="40px">
+            <use href="./images/icons.svg#menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <button type="button" class="menu-btn menu-btn--x" data-menu-close>
+            <svg class="menu-btn__close" width="40px" height="40px">
+              <use href="./images/icons.svg#close_40px"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav__list">
+            <li class="menu-nav__item">
+              <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студія</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+            </li>
+            <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
+          </ul>
+          <div class="menu-bottom">
+            <address class="menu-contacts">
+              <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11</a>
+              <a href="mailto:info@devstudio.com" class="menu-contacts__email">
+                info@devstudio.com</a
+              >
+            </address>
+            <ul class="menu-social">
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="" aria-label="наш instagram">Instagram </a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="" aria-label="наш twitter">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="" aria-label="наш facebook">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="" aria-label="наш linkedin">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="portfolio__title visually-hidden">Наши работы</h1>
+          <h1 class="portfolio__title visually-hidden">Наші роботи</h1>
           <ul class="filters">
-            <li class="filters__item"><button type="button" class="filters__btn">Все</button></li>
+            <li class="filters__item"><button type="button" class="filters__btn">Всі</button></li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Веб-сайты</button>
+              <button type="button" class="filters__btn">Веб-сайти</button>
             </li>
             <li class="filters__item">
-              <button type="button" class="filters__btn">Приложения</button>
+              <button type="button" class="filters__btn">Додатки</button>
             </li>
             <li class="filters__item">
               <button type="button" class="filters__btn">Дизайн</button>
@@ -79,13 +131,13 @@
                   <img
                     class="overlay__pic"
                     src="./images/1tekhnokryak.jpg"
-                    alt="на экране ноутбука карточки троих человек"
+                    alt="на екрані ноутбука картки трьох людей"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
@@ -100,13 +152,13 @@
                   <img
                     class="overlay__pic"
                     src="./images/2orleans.jpg"
-                    alt="постер два баскетболиста с мячом"
+                    alt="постер два баскетболісти з м'ячем"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
@@ -121,18 +173,18 @@
                   <img
                     class="overlay__pic"
                     src="./images/3seafood.jpg"
-                    alt="логотип в виде рыбы с надписью ресторан сиафуд"
+                    alt="логотип у вигляді риби з написом ресторан сіафуд"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
                   <h2 class="projekt__title">Ресторан Seafood</h2>
-                  <p class="projekt__category">Приложение</p>
+                  <p class="projekt__category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -142,17 +194,17 @@
                   <img
                     class="overlay__pic"
                     src="./images/4prime.jpg"
-                    alt="черные наушники"
+                    alt="чорні навушники"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
-                  <h2 class="projekt__title">Проект Prime</h2>
+                  <h2 class="projekt__title">Проєкт Prime</h2>
                   <p class="projekt__category">Маркетинг</p>
                 </div>
               </a>
@@ -163,18 +215,18 @@
                   <img
                     class="overlay__pic"
                     src="./images/5boxes.jpg"
-                    alt="две коробочки, белая и коричневая"
+                    alt="дві коробочки, біла та брунатна"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
-                  <h2 class="projekt__title">Проект Boxes</h2>
-                  <p class="projekt__category">Приложение</p>
+                  <h2 class="projekt__title">Проєкт Boxes</h2>
+                  <p class="projekt__category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -184,13 +236,13 @@
                   <img
                     class="overlay__pic"
                     src="./images/6inspiration.jpg"
-                    alt="монитор компьютера"
+                    alt="монітор комп'ютера"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
@@ -205,17 +257,17 @@
                   <img
                     class="overlay__pic"
                     src="./images/7limited.jpg"
-                    alt="открытый журнал"
+                    alt="розгорнутий журнал"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
-                  <h2 class="projekt__title">Издание Limited Edition</h2>
+                  <h2 class="projekt__title">Видання Limited Edition</h2>
                   <p class="projekt__category">Дизайн</p>
                 </div>
               </a>
@@ -226,17 +278,17 @@
                   <img
                     class="overlay__pic"
                     src="./images/8lab.jpg"
-                    alt="бирка с надписью лаб ел тег"
+                    alt="бірка з написом лаб ел тег"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
-                  <h2 class="projekt__title">Проект LAB</h2>
+                  <h2 class="projekt__title">Проєкт LAB</h2>
                   <p class="projekt__category">Маркетинг</p>
                 </div>
               </a>
@@ -247,18 +299,18 @@
                   <img
                     class="overlay__pic"
                     src="./images/9growing.jpg"
-                    alt="ноутбук с открытым приложением гровин бизнес"
+                    alt="ноутбук із відкритим додатком гровін бизнес"
                     width="370"
                   />
                   <p class="overlay__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения компании
-                    или частном лице.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="projekt">
                   <h2 class="projekt__title">Growing Business</h2>
-                  <p class="projekt__category">Приложение</p>
+                  <p class="projekt__category">Додаток</p>
                 </div>
               </a>
             </li>
@@ -278,7 +330,7 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="address__map"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="address__item">
@@ -291,37 +343,37 @@
           </address>
         </div>
         <div class="footer-socials">
-          <p class="footer-socials__text">присоединяйтесь</p>
+          <p class="footer-socials__text">приєднуйтесь</p>
           <ul class="social">
             <li class="social__item">
               <a class="social__icon social__icon--footer" href="" aria-label="наш instagram">
                 <svg class="social__logo" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__icon social__icon--footer" href="" aria-label="наш twitter">
-                <svg class="social__logo" width="20" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use></svg
               ></a>
             </li>
             <li class="social__item">
               <a class="social__icon social__icon--footer" href="" aria-label="наш facebook">
-                <svg class="social__logo" width="10" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
+                <svg class="social__logo" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use></svg
               ></a>
             </li>
             <li class="social__item">
               <a class="social__icon social__icon--footer" href="" aria-label="наш linkedin">
                 <svg class="social__logo" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  <use href="./images/icons.svg#linkedin"></use></svg
               ></a>
             </li>
           </ul>
         </div>
         <div class="footer-form">
-          <p class="footer-form__text">Подпишитесь на рассылку</p>
+          <p class="footer-form__text">Підпишіться на розсилку</p>
           <form class="subscribe">
             <input
               class="subscribe__email"
@@ -331,14 +383,15 @@
               required
             />
             <button class="main-button main-button--right-icon" type="submit">
-              Подписаться
+              Підписатися
               <svg class="main-button__icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-send"></use>
+                <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

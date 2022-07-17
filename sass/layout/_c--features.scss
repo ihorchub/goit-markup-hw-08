@@ -1,18 +1,27 @@
 .features {
-  // @include sectionPadding();
-  @include mobilePadding();
+  @include sectionPadding(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include sectionPadding(94px, 94px);
+  }
 }
 
 .features__list {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .features__item {
-  max-width: 100%;
-  // width: 270px;
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features__icon {
@@ -22,18 +31,23 @@
 
   border-radius: 4px;
 
-  background-color: var(--btn-color);
+  background-color: $color-secondary;
 }
 
 .features__title {
   margin-bottom: 10px;
 
-  @include font(null, 14px, 1.43, null);
+  @include font(null, 14px, 1.17, null);
+  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features__description {
-  color: var(--text-color);
+  color: $color-text-main;
 
   @include font(null, 14px, 1.71, null);
 }
