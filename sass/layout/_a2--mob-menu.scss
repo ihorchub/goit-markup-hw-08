@@ -9,11 +9,14 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  @include transition(transform opacity);
 }
 .is-hidden {
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   visibility: hidden;
+
+  transform: translate(100%, -100%);
 }
 
 .mob-container {
@@ -26,7 +29,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .menu-btn--x {
@@ -50,6 +53,10 @@
   }
 }
 
+.menu-nav__link--current {
+  color: $color-accent;
+}
+
 .menu-contacts {
   display: flex;
   flex-direction: column;
@@ -59,12 +66,12 @@
   display: inline-block;
   margin-bottom: 32px;
 
-  @media screen and (max-width: 479px) {
-    font-size: 28px;
-  }
   font-style: normal;
-  font-size: 34px;
+  font-size: calc(15px + 4vw);
   line-height: 1.17;
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 
   color: $color-accent;
 }
@@ -78,9 +85,6 @@
 }
 
 .menu-social {
-  @media screen and (max-width: 479px) {
-    gap: 11px;
-  }
   display: flex;
   align-items: baseline;
   gap: 20px;
@@ -89,10 +93,6 @@
 .menu-social__item {
   position: relative;
   &:not(:last-child)::after {
-    @media screen and (max-width: 479px) {
-      margin-left: 5px;
-      width: 1px;
-    }
     content: '';
     position: absolute;
     margin-left: 9px;
@@ -103,11 +103,11 @@
 }
 
 .menu-social__link {
-  @media screen and (max-width: 479px) {
-    font-size: 13px;
-  }
-  font-size: 18px;
+  font-size: calc(3px + 3vw);
   line-height: 22px;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 
   color: $color-accent;
 }

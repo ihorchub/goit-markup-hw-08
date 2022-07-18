@@ -8,8 +8,6 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  opacity: 1;
-
   @include transition(opacity);
 }
 
@@ -25,25 +23,42 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  height: 581px;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  max-height: 609px;
+  overflow-y: auto;
+
   border-radius: 4px;
   padding: 40px;
 
-  background-color: var(--base-color);
+  background-color: $color-base;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @include transition(transform visibility);
+  @include transition(transform opacity);
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal__title {
   margin-bottom: 12px;
-
-  @include font(700, 20px, 1.15, 0.03em);
+  @include font(700, calc(10px + 2vw), 1.15, 0.03em);
   text-align: center;
+  @media screen and (min-width: 480px) {
+    @include font(700, 20px, 1.5, 0.03em);
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 
-  color: var(--heading-color);
+  color: $color-title;
 }
 
 .backdrop--is-hidden .modal {
@@ -60,7 +75,7 @@
   border-radius: 50%;
 
   cursor: pointer;
-  background: var(--base-color);
+  background: $color-base;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   &:focus-visible {
@@ -80,6 +95,6 @@
 
   .close:hover &,
   .close:focus & {
-    fill: var(--accent-color);
+    fill: $color-accent;
   }
 }

@@ -7,7 +7,7 @@
 }
 
 %formOutline {
-  outline: 3px solid var(--accent-color);
+  outline: 3px solid $color-accent;
 }
 
 .form__field {
@@ -22,7 +22,7 @@
 .form__label {
   margin-bottom: 4px;
   @include font(400, 12px, 1.17, 0.01em);
-  color: var(--text-color);
+  color: $color-text-main;
 }
 
 .form__input {
@@ -30,10 +30,10 @@
   @extend %baseForm;
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $color-accent;
   }
   &:focus-visible {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $color-accent;
   }
 }
 
@@ -43,14 +43,17 @@
   @extend %baseForm;
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $color-accent;
   }
   &:focus-visible {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $color-accent;
   }
   &::placeholder {
-    @include font(400, 12px, 1.17, 0.01em);
     color: rgba(117, 117, 117, 0.5);
+    @include font(400, 14px, 1.14, 0.01em);
+    @media screen and (min-width: 1200px) {
+      @include font(400, 12px, 1.17, 0.01em);
+    }
   }
 }
 
@@ -58,20 +61,23 @@
   position: absolute;
   bottom: 11px;
   left: 12px;
-  fill: var(--heading-color);
+  fill: $color-title;
   @include transition(fill);
   .form__input:focus + &,
   .form__input:hover + & {
-    fill: var(--accent-color);
+    fill: $color-accent;
   }
 }
 
 .check {
   @include flexCentered();
-  @include font(400, 14px, 1.71, null);
-  color: var(--text-color);
-  margin-top: 25px;
+  @include font(400, 12px, 1.16, null);
+  color: $color-text-main;
+  margin-top: 20px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, null);
+  }
 }
 
 .check__input {
@@ -111,11 +117,11 @@
 }
 
 .main-button--outline:focus-visible {
-  outline: 3px solid var(--accent-color);
+  outline: 3px solid $color-accent;
 }
 
 .check__conditions {
-  color: var(--accent-color);
+  color: $color-accent;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   &:focus-visible {

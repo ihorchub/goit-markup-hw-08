@@ -165,21 +165,34 @@
           <h2 class="directions__title">Чим ми займаємося</h2>
           <ul class="directions__list">
             <li class="directions__item">
-              <img src="./images/doing1.jpg" width="370" alt="руки на клавіатурі, на екрані код" />
+              <img
+                srcset="
+                  ./images/content-pic/app-descktop.jpg    1x,
+                  ./images/content-pic/app-descktop-2x.jpg 2x
+                "
+                src="./images/content-pic/app-descktop.jpg"
+                alt="руки на клавіатурі, на екрані код"
+              />
               <p class="directions__text">Десктопні додатки</p>
             </li>
             <li class="directions__item">
               <img
-                src="./images/doing2.jpg"
-                width="370"
+                srcset="
+                  ./images/content-pic/app-mobile.jpg    1x,
+                  ./images/content-pic/app-mobile-2x.jpg 2x
+                "
+                src="./images/content-pic/app-mobile.jpg"
                 alt="мобильний телефон в руці та на екрані"
               />
               <p class="directions__text">Мобільні додатки</p>
             </li>
             <li class="directions__item">
               <img
-                src="./images/doing3.jpg"
-                width="370"
+                srcset="
+                  ./images/content-pic/app-design.jpg    1x,
+                  ./images/content-pic/app-design-2x.jpg 2x
+                "
+                src="./images/content-pic/app-design.jpg"
                 alt="кольорова палітра на екрані планшету"
               />
               <p class="directions__text">Дизайнерські рішення</p>
@@ -192,12 +205,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="member">
-              <img
-                class="member__photo"
-                src="./images/demiyanenko.jpg"
-                width="270"
-                alt="чоловік в окулярах посміхається"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/content-pic/demiyanenko-desck.jpg    1x,
+                    ./images/content-pic/demiyanenko-desck-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/content-pic/demiyanenko-tabl.jpg    1x,
+                    ./images/content-pic/demiyanenko-tabl-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/content-pic/demiyanenko-mob.jpg    1x,
+                    ./images/content-pic/demiyanenko-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/content-pic/demiyanenko-mob.jpg"
+                  alt="чоловік в окулярах посміхається"
+                  width="450px"
+                />
+              </picture>
               <div class="member__description">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
                 <p class="member__position">Product Designer</p>
@@ -231,12 +266,34 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__photo"
-                src="./images/repina.jpg"
-                width="270"
-                alt="дівчина блондинка в окулярах посміхається"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/content-pic/repina-desck.jpg    1x,
+                    ./images/content-pic/repina-desck-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/content-pic/repina-tabl.jpg    1x,
+                    ./images/content-pic/repina-tabl-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/content-pic/repina-mob.jpg    1x,
+                    ./images/content-pic/repina-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/content-pic/repina-mob.jpg"
+                  alt="дівчина блондинка в окулярах посміхається"
+                  width="450px"
+                />
+              </picture>
               <div class="member__description">
                 <h3 class="member__name">Ольга Рєпіна</h3>
                 <p class="member__position">Frontend Developer</p>
@@ -270,12 +327,34 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__photo"
-                src="./images/tarasov.jpg"
-                width="270"
-                alt="чоловік у блакитній сорочці посміхається"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/content-pic/tarasov-desck.jpg    1x,
+                    ./images/content-pic/tarasov-desck-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/content-pic/tarasov-tabl.jpg    1x,
+                    ./images/content-pic/tarasov-tabl-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/content-pic/tarasov-mob.jpg    1x,
+                    ./images/content-pic/tarasov-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/content-pic/tarasov-mob.jpg"
+                  alt="чоловік у блакитній сорочці посміхається"
+                  width="450px"
+                />
+              </picture>
               <div class="member__description">
                 <h3 class="member__name">Микола Тарасов</h3>
                 <p class="member__position">Marketing</p>
@@ -309,12 +388,34 @@
               </div>
             </li>
             <li class="member">
-              <img
-                class="member__photo"
-                src="./images/ermakov.jpg"
-                width="270"
-                alt="чоловік у чорній футболці, з бородою та в окулярах"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/content-pic/ermakov-desck.jpg    1x,
+                    ./images/content-pic/ermakov-desck-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/content-pic/ermakov-tabl.jpg    1x,
+                    ./images/content-pic/ermakov-tabl-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/content-pic/ermakov-mob.jpg    1x,
+                    ./images/content-pic/ermakov-mob-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/content-pic/ermakov-mob.jpg"
+                  alt="чоловік у чорній футболці, з бородою та в окулярах"
+                  width="450px"
+                />
+              </picture>
               <div class="member__description">
                 <h3 class="member__name">Михайло Єрмаков</h3>
                 <p class="member__position">UI Designer</p>
@@ -472,61 +573,63 @@
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
-          <svg class="close__icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
+          <svg class="close__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="form">
           <div class="form__field">
-            <label class="form__label" for="name">Имя</label>
+            <label class="form__label" for="name">Ім'я</label>
             <input class="form__input" type="text" id="name" required name="name" />
             <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-person-blck"></use>
+              <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
           <div class="form__field">
             <label class="form__label" for="tel">Телефон</label>
             <input class="form__input" type="tel" id="tel" required name="tel" />
             <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-phone-black"></use>
+              <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
           <div class="form__field">
-            <label class="form__label" for="mail">Почта</label>
+            <label class="form__label" for="mail">Пошта</label>
             <input class="form__input" type="email" id="mail" required name="mail" />
             <svg class="form__icon" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-email-black"></use>
+              <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
           <div class="form__field">
-            <label class="form__label" for="comment">Комментарий</label>
+            <label class="form__label" for="comment">Коментар</label>
             <textarea
               class="form__textarea"
               name="comment"
               id="comment"
               rows="6"
-              placeholder="Введите текст"
+              placeholder="Введіть текст"
             ></textarea>
           </div>
-          <label class="check">
-            <input class="check__input" type="checkbox" value="okay" required />
+          <div class="check">
+            <input class="check__input" type="checkbox" value="okay" id="check" required />
             <div class="check__icons">
               <svg class="check__disabled" width="16px" height="15px">
-                <use href="./images/icons.svg#icon-not-check"></use>
+                <use href="./images/icons.svg#not-check"></use>
               </svg>
               <svg class="check__enabled" width="16px" height="15px">
-                <use href="./images/icons.svg#icon-check"></use>
+                <use href="./images/icons.svg#check"></use>
               </svg>
             </div>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="check__conditions">Условия договора</a>
-          </label>
-          <button type="submit" class="main-button main-button--outline">Отправить</button>
+            <label class="check__label" for="check"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="check__conditions">Умови договору</a></label
+            >
+          </div>
+          <button type="submit" class="main-button main-button--outline">Відправити</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,12 +28,10 @@
           <a href="./index.html" class="logo">Web<span class="logo__header">Studio</span></a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
@@ -73,10 +71,12 @@
           </button>
           <ul class="menu-nav__list">
             <li class="menu-nav__item">
-              <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студія</a>
+              <a href="./index.html" class="menu-nav__link">Студія</a>
             </li>
             <li class="menu-nav__item">
-              <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+              <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current"
+                >Портфоліо</a
+              >
             </li>
             <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
           </ul>
@@ -128,12 +128,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/1tekhnokryak.jpg"
-                    alt="на екрані ноутбука картки трьох людей"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/tekhnokryak-desck.jpg    1x,
+                        ./images/content-pic/tekhnokryak-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/tekhnokryak-tabl.jpg    1x,
+                        ./images/content-pic/tekhnokryak-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/tekhnokryak-mob.jpg    1x,
+                        ./images/content-pic/tekhnokryak-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/tekhnokryak-mob.jpg"
+                      alt="на екрані ноутбука картки трьох людей"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -149,12 +171,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/2orleans.jpg"
-                    alt="постер два баскетболісти з м'ячем"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/orleans-desck.jpg    1x,
+                        ./images/content-pic/orleans-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/orleans-tabl.jpg    1x,
+                        ./images/content-pic/orleans-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/orleans-mob.jpg    1x,
+                        ./images/content-pic/orleans-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/orleans-mob.jpg"
+                      alt="постер два баскетболісти з м'ячем"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -170,12 +214,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/3seafood.jpg"
-                    alt="логотип у вигляді риби з написом ресторан сіафуд"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/seafood-desck.jpg    1x,
+                        ./images/content-pic/seafood-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/seafood-tabl.jpg    1x,
+                        ./images/content-pic/seafood-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/seafood-mob.jpg    1x,
+                        ./images/content-pic/seafood-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/seafood-mob.jpg"
+                      alt="логотип у вигляді риби з написом ресторан сіафуд"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -191,12 +257,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/4prime.jpg"
-                    alt="чорні навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/prime-desck.jpg    1x,
+                        ./images/content-pic/prime-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/prime-tabl.jpg    1x,
+                        ./images/content-pic/prime-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/prime-mob.jpg    1x,
+                        ./images/content-pic/prime-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/prime-mob.jpg"
+                      alt="чорні навушники"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -212,12 +300,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/5boxes.jpg"
-                    alt="дві коробочки, біла та брунатна"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/boxes-desck.jpg    1x,
+                        ./images/content-pic/boxes-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/boxes-tabl.jpg    1x,
+                        ./images/content-pic/boxes-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/boxes-mob.jpg    1x,
+                        ./images/content-pic/boxes-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/boxes-mob.jpg"
+                      alt="дві коробочки, біла та брунатна"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -233,12 +343,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/6inspiration.jpg"
-                    alt="монітор комп'ютера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/inspiration-desck.jpg    1x,
+                        ./images/content-pic/inspiration-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/inspiration-tabl.jpg    1x,
+                        ./images/content-pic/inspiration-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/inspiration-mob.jpg    1x,
+                        ./images/content-pic/inspiration-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/inspiration-mob.jpg"
+                      alt="монітор комп'ютера"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -254,12 +386,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/7limited.jpg"
-                    alt="розгорнутий журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/limited-desck.jpg    1x,
+                        ./images/content-pic/limited-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/limited-tabl.jpg    1x,
+                        ./images/content-pic/limited-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/limited-mob.jpg    1x,
+                        ./images/content-pic/limited-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/limited-mob.jpg"
+                      alt="розгорнутий журнал"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -275,12 +429,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/8lab.jpg"
-                    alt="бірка з написом лаб ел тег"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/lab-desck.jpg    1x,
+                        ./images/content-pic/lab-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/lab-tabl.jpg    1x,
+                        ./images/content-pic/lab-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/lab-mob.jpg    1x,
+                        ./images/content-pic/lab-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/lab-mob.jpg"
+                      alt="бірка з написом лаб ел тег"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -296,12 +472,34 @@
             <li class="works__item">
               <a href="" class="works__link">
                 <div class="overlay">
-                  <img
-                    class="overlay__pic"
-                    src="./images/9growing.jpg"
-                    alt="ноутбук із відкритим додатком гровін бизнес"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/content-pic/growing-desck.jpg    1x,
+                        ./images/content-pic/growing-desck-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/content-pic/growing-tabl.jpg    1x,
+                        ./images/content-pic/growing-tabl-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/content-pic/growing-mob.jpg    1x,
+                        ./images/content-pic/growing-mob-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/content-pic/growing-mob.jpg"
+                      alt="ноутбук із відкритим додатком гровін бизнес"
+                      width="450px"
+                    />
+                  </picture>
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -392,6 +590,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

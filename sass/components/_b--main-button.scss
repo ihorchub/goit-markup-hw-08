@@ -6,8 +6,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  background-color: var(--accent-color);
-  color: var(--base-color);
+  background-color: $color-accent;
+  color: $color-base;
   border: none;
   cursor: pointer;
   display: block;
@@ -18,6 +18,6 @@
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: $color-button-hover;
   }
 }
